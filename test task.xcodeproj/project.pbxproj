@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		08F4E1F42618DAD20068347D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F4E1F32618DAD20068347D /* AppDelegate.swift */; };
 		08F4E1F62618DAD20068347D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F4E1F52618DAD20068347D /* SceneDelegate.swift */; };
-		08F4E1F82618DAD20068347D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F4E1F72618DAD20068347D /* ViewController.swift */; };
+		08F4E1F82618DAD20068347D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F4E1F72618DAD20068347D /* HomeViewController.swift */; };
 		08F4E1FB2618DAD20068347D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F4E1F92618DAD20068347D /* Main.storyboard */; };
 		08F4E1FD2618DAD70068347D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08F4E1FC2618DAD70068347D /* Assets.xcassets */; };
 		08F4E2002618DAD70068347D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F4E1FE2618DAD70068347D /* LaunchScreen.storyboard */; };
+		08F4E22C2618EEB20068347D /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F4E22A2618EEB20068347D /* HomeCollectionViewCell.swift */; };
+		08F4E22D2618EEB20068347D /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08F4E22B2618EEB20068347D /* HomeCollectionViewCell.xib */; };
+		08F4E2302618EEED0068347D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F4E22F2618EEED0068347D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08F4E1F02618DAD20068347D /* test task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08F4E1F32618DAD20068347D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08F4E1F52618DAD20068347D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		08F4E1F72618DAD20068347D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08F4E1F72618DAD20068347D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		08F4E1FA2618DAD20068347D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08F4E1FC2618DAD70068347D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08F4E1FF2618DAD70068347D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08F4E2012618DAD70068347D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08F4E22A2618EEB20068347D /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		08F4E22B2618EEB20068347D /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		08F4E22F2618EEED0068347D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +68,6 @@
 				08F4E20E2618DDD50068347D /* View */,
 				08F4E1F32618DAD20068347D /* AppDelegate.swift */,
 				08F4E1F52618DAD20068347D /* SceneDelegate.swift */,
-				08F4E1F72618DAD20068347D /* ViewController.swift */,
 				08F4E1F92618DAD20068347D /* Main.storyboard */,
 				08F4E1FC2618DAD70068347D /* Assets.xcassets */,
 				08F4E1FE2618DAD70068347D /* LaunchScreen.storyboard */,
@@ -74,6 +79,8 @@
 		08F4E20E2618DDD50068347D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				08F4E2292618EE990068347D /* Cell */,
+				08F4E1F72618DAD20068347D /* HomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				08F4E2132618DE070068347D /* Extensions */,
+				08F4E22F2618EEED0068347D /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -105,6 +113,15 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		08F4E2292618EE990068347D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				08F4E22A2618EEB20068347D /* HomeCollectionViewCell.swift */,
+				08F4E22B2618EEB20068347D /* HomeCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +184,7 @@
 				08F4E2002618DAD70068347D /* LaunchScreen.storyboard in Resources */,
 				08F4E1FD2618DAD70068347D /* Assets.xcassets in Resources */,
 				08F4E1FB2618DAD20068347D /* Main.storyboard in Resources */,
+				08F4E22D2618EEB20068347D /* HomeCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,9 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08F4E1F82618DAD20068347D /* ViewController.swift in Sources */,
+				08F4E1F82618DAD20068347D /* HomeViewController.swift in Sources */,
 				08F4E1F42618DAD20068347D /* AppDelegate.swift in Sources */,
 				08F4E1F62618DAD20068347D /* SceneDelegate.swift in Sources */,
+				08F4E22C2618EEB20068347D /* HomeCollectionViewCell.swift in Sources */,
+				08F4E2302618EEED0068347D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +348,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "test task/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,6 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "test task/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
