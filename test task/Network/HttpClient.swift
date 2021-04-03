@@ -74,6 +74,27 @@ extension IHttpClient {
 
 class HttpClient: IHttpClient {
     func get<T: Codable>(endpoint: Endpoint, clazz: T.Type, params: Parameters, completion: @escaping (Response<T>) -> Void) {
-        
+        self.request(endpoint: endpoint, clazz: [String: Any].self, method: .get, encoding: URLEncoding.default, params: params) { (response) in
+            switch response.status {
+            
+            case .success:
+                // handle server success case
+                guard let data = response.data as? [String: Any] else {
+                    completion(Response())
+                    return
+                }
+                
+                
+                break
+                
+            case .failure:
+                // retrive failure message
+                break
+                
+            case .error:
+                // handle server error case here
+                break
+            }
+        }
     }
 }

@@ -16,6 +16,7 @@
 		08F4E2152618DE5B0068347D /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F4E2142618DE5B0068347D /* HttpClient.swift */; };
 		08F4E2182618DEA20068347D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F4E2172618DEA20068347D /* Endpoint.swift */; };
 		08F4E21F2618E0340068347D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F4E21E2618E0340068347D /* Response.swift */; };
+		08F4E2232618E57C0068347D /* AppVoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F4E2222618E57C0068347D /* AppVoid.swift */; };
 		C9FDA81CA9218D72B961EF36 /* Pods_test_task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E21DC33B703BE63862916D /* Pods_test_task.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		08F4E2142618DE5B0068347D /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		08F4E2172618DEA20068347D /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		08F4E21E2618E0340068347D /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		08F4E2222618E57C0068347D /* AppVoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVoid.swift; sourceTree = "<group>"; };
 		49E21DC33B703BE63862916D /* Pods_test_task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E29DD7262D244DBDE3BE24A /* Pods-test task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test task.debug.xcconfig"; path = "Target Support Files/Pods-test task/Pods-test task.debug.xcconfig"; sourceTree = "<group>"; };
 		B9D97EE7A61C427FAEF12B18 /* Pods-test task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test task.release.xcconfig"; path = "Target Support Files/Pods-test task/Pods-test task.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		08F4E20F2618DDDE0068347D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				08F4E2222618E57C0068347D /* AppVoid.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08F4E1F82618DAD20068347D /* ViewController.swift in Sources */,
+				08F4E2232618E57C0068347D /* AppVoid.swift in Sources */,
 				08F4E1F42618DAD20068347D /* AppDelegate.swift in Sources */,
 				08F4E2152618DE5B0068347D /* HttpClient.swift in Sources */,
 				08F4E1F62618DAD20068347D /* SceneDelegate.swift in Sources */,
