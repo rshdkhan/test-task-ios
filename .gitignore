@@ -91,3 +91,5 @@ iOSInjectionProject/
 Pods/Alamofire/Source
 *.lock
 Pods
+contents.xcworkspacedata
+test task.xcworkspace/xcshareddata
