@@ -40,11 +40,11 @@ extension IHttpClient {
                 switch serverResponse.result {
                 case .success(let value):
                     if let rootJson = value as? T {
-//                        completion(Response(withData: rootJson))
+                        completion(Response(withData: rootJson))
                         return
                     }
                     
-//                    completion(Response(withFailure: "root json is null"))
+                    completion(Response())
                     break
                     
                 case .failure(let error):
@@ -58,7 +58,7 @@ extension IHttpClient {
                         }
                     }
                     
-//                    completion(Response(withError: error))
+                    completion(Response(withError: error))
                     break
                 }
             }
